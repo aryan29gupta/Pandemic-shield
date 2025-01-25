@@ -1,0 +1,89 @@
+body {
+    background-color: #d3d3d3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 1200px;
+    padding: 20px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+  }
+
+  .header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Montserrat", serif;
+  }
+
+  .subheader {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .lights {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .red { background-color: red; }
+  .yellow { background-color: yellow; }
+  .green { background-color: green; }
+
+  .details {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    line-height: 1.6;
+
+    width:300px;
+  }
+
+  .qr-container {
+    text-align: right;
+  }
+
+  .qr-placeholder {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 10px;
+    background-image: url("QR.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 380px;
+  }
+
+  .note {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .common{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .qr-container p{
+    font-size: 1.2rem;
+  }

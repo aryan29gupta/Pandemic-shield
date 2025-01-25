@@ -68,5 +68,5 @@ a:hover{
 }
 
 body{
-    background: radial-gradient(circle,rgb(230, 231, 232),hsla(208, 100%, 87%, 0.836));
+    background-color: #ccc;
 }
