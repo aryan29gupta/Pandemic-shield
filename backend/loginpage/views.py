@@ -2,7 +2,8 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("this is the login page")
+    return render(request, 'login-page.html')
+    # return HttpResponse("this is the login page")
 
 def home(request):
     return HttpResponse("this is the home page")
