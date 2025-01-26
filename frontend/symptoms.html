@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Box Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Symptoms</h1>
+    <form id="inputForm">
+        <input type="text" id="userInput" placeholder="Enter symptoms here..." />
+        <button type="button" onclick="getInput()">Enter</button>
+    </form>
+    <p id="result"></p>
+</body>
+<script>
+    // JavaScript to handle the input
+    function getInput() {
+        // Get the value of the input box
+        const input = document.getElementById("userInput").value;
+
+        // Display the input in the result paragraph
+        const result = document.getElementById("result");
+        result.textContent = `You entered: ${input}`;
+
+        // (Optional) Further processing or storing the input
+        console.log("User input:", input);
+    }
+</script>
+<script src="checker.js"></script>
+</html>
